@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handson 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Javascript Handson-1  <span>Operators & Expressions</span></h1>
+        <h2>Q1. (Add two Numbers) You are provided with two numbers a and b Your task is to add these two numbers.</h2>
+        <h2><pre>Ans. Input:- 2 5  || Output :- 7
+            const AddTwoNumbers = (a,b) => {
+                return (a+b);
+              };
+        </pre></h2>
+        <h2>Q2. (Find if the conditions are obeyed or not?) You are given two number first as A and second as B and check if both conditions (A < 10 and A > B) are satisfied or not with the help of operators.</h2>
+        <h2><pre>Ans. Input :- 5 3  ||  Output :- true
+            const Is_Valid = (a,b) => {
+                return (a < 10 && a > b)
+              };
+        </pre></h2>
+        <h2>Q3. (Check the conditons) You are given two numbers A and B. You need to do the following checks: 
+            <ol>
+                <li>if both are divisible by 10 console true.</li>
+                <li>if both are not divisible by 10 console false.</li>
+                <li>if one of them only is divisible by 10 console true.</li>
+            </ol>
+            Use operator to do this.
+        </h2>
+        <h2><pre>Ans. Input :- 12 20  ||  Output :- true
+            const Check = (A, B) => {
+                if(A%10==0 || B%10==0){
+                    return true;
+                }else if(A%10==0 && B%10==0){
+                    return true;
+                }else{
+                    return false;
+                }
+            };
+        </pre></h2>
+        <h2>Q4. (Find the first digit of a 4 digit number) You are provided a four digit number N only. Your task is to print out the first digit of that number.</h2>
+        <h2><pre>Ans. Input :- 4567 ||  Output :- 4
+            const First_Digit = (n) => {
+                let number = Math.floor(n/1000);
+                return number;
+              };
+        </pre>
+        <span>Note: Not a valid code of for found first digit of a 4 digit number because -ve value not work in this method.</span></h2>
+        <h2>Q5. (Find the last digit of a 4 digit number) You are provided a four digit number N only. Your task is to print out the last digit of that number.</h2>
+        <h2><pre>Ans. Input :- 4567  ||  Output :- 7
+            const Last_Digit = (n) => {
+                return  (n%10);
+              };
+        </pre></h2>
+        <h2>Q6. (Find the remainder) You are provided with two numbers A and B where A as  divisor and B as  dividend.Your task is find the remainder.</h2>
+        <h2><pre>Ans. Input :- 2 9  ||  Output :- 1
+            const Find_the_remainder = (a,b) => {
+                return (b%a);
+              };
+        </pre></h2>
+        <h2>Q7. (Multipy two Numbers) You are provided with two numbers A and B. Your task is to multiply these two numbers.</h2>
+        <h2><pre>Ans. Input :- 2 5  ||  Output :- 10
+            const Multiply_two_number = (a,b) => {
+                return (a*b);
+              };
+        </pre></h2>
+        <h2>Q8. (Marks Calculator) Shyam has got his marks in three subjects as 
+            A
+            , 
+            B
+            , and 
+            C
+             (out of 100).Write a program to calculate his total marks and his average.</h2>
+        <h2><pre>Ans. Input :- 50 20 100  ||  Output1 :- 170 ,  Output2:-  56.67  
+            const Sum = (A, B, C) => {
+                return (A+B+C);
+            };
+            const Average = (A, B, C) => {
+                return ((A+B+C)/3);
+            };
+        </pre></h2>
+    </div>
+</body>
+</html>
